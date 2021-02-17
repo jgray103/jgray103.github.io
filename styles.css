@@ -1,8 +1,13 @@
+.body {
+    display: flex;
+    width: 100%;
+}
+
 .Body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .Header {
