@@ -1,39 +1,50 @@
-.body {
-    border: 1px solid orange;
-}
-
 .Body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    border: 1px solid blue;
+    font-family: Roboto;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .Header {
     display: flex;
+    width: 800px;
 }
 
 .AboutMe {
     display: flex;
     flex-direction: row;
+    width: 800px;
 }
 
 .AboutMe1 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
+    padding-right: 10px;
+}
+
+.AboutMe2 {
+    display: flex;
+    width: 400px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 .Projects {
     display: flex;
     flex-direction: column;
+    width: 800px;
+    padding-bottom: 5px;
 }
 
 .Skills {
     display: flex;
     flex-direction: column;
+    width: 800px;
 }
 
 .Skills1 {
@@ -41,12 +52,48 @@
     flex-direction: row;
 }
 
+.Skills1a {
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.Skills1b {
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.Skills1c {
+    margin-right: 10px;
+}
+
+.Skills1d {
+    margin-right: 10px;
+}
+
 .Contact {
     display: flex;
     flex-direction: column;
+    width: 800px;
 }
 
 .Contact1 {
     display: flex;
     flex-direction: row;
+}
+
+
+h2 {
+    margin: 5px 0px 5px;
+}
+
+h3 {
+    margin: 5px 0px 5px;
+}
+
+p {
+    margin: 5px 0px 5px;
+}
+
+ul {
+    margin: 5px 0px 5px;
 }
