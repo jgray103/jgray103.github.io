@@ -22,13 +22,13 @@
 .AboutMe1 {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 490px;
 }
 
 .AboutMe2 {
     display: flex;
-    width: 400px;
-    padding-left: 10px;
+    width: 310px;
+    padding: 10px 0px 0px 10px;
 }
 
 .Projects {
@@ -53,28 +53,24 @@
     display: flex;
     align-items: center;
     margin-right: 15px;
-    border: 1px solid white;
 }
 
 .Skills1b {
     display: flex;
     align-items: center;
     margin-right: 15px;
-    border: 1px solid white;
 }
 
 .Skills1c {
     display: flex;
     align-items: center;
     margin-right: 15px;
-    border: 1px solid white;
 }
 
 .Skills1d {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    border: 1px solid white;
 }
 
 .Contact {
@@ -85,16 +81,20 @@
 
 .Contact1 {
     display: flex;
-    flex-direction: row;
-    margin-top: 5px;
 }
 
 .Contact2 {
     display: flex;
-    margin-right: 10px;
+    flex-direction: row;
+    margin-top: 5px;
 }
 
 .Contact3 {
+    display: flex;
+    margin-right: 10px;
+}
+
+.Contact4 {
     display: flex;
     align-items: center;
 }
@@ -114,4 +114,5 @@ p {
 
 ul {
     margin: 5px 0px 5px;
+    padding: 0px 0px 0px 20px;
 }
