@@ -9,48 +9,62 @@
     </head>
     <body>
         <div class="Body">
-            <div class="Header">
+            <nav class="Header">
                 <h2>Jared Gray</h2>
-            </div>
+                <ul class="navigation-items">
+                    <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                    <li class="navigation-item"><a href="#projects">Projects</a></li>
+                    <li class="navigation-item"><a href="#skills">Skills</a></li>
+                    <li class="navigation-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <div class="AboutMe">
                 <div class="AboutMe1">
-                    <h3>About Me</h3>
-                    <p>
-                        Hi I'm Jared Gray. I am a licensed Optometrist turned software 
-                        developer, and have been coding for 2 years now. I first 
-                        completed an online full-stack web development bootcamp, and 
-                        since have been working on a software startup of my own (EHR and 
-                        practice management software for eye doctors, an ongoing endeavor).
-                    </p>
-                    <p>
-                        My technical expertise includes strong skills in cutting 
-                        edge web development technologies (HTML, CSS, JavaScript, 
-                        React, Redux, React Router, Material-UI, Node, Express, SQL, 
-                        MySQL, SQLite, MongoDB, Git, Bash and PowerShell, JSON, Mocha); 
-                        and advanced knowledge of developer applications, tools, 
-                        methodologies and best practices (including Visual Studio Code, 
-                        OOD, RESTful APIs, client/server architecture and self-test 
-                        automation). I have coded on both macOS and Windows, and am also 
-                        very willing and eager to learn any new technologies necessary 
-                        for projects assigned to me.
-                    </p>
-                    <p>
-                        My coding knowledge and skills combined with excellent work 
-                        ethic and passion for coding will enable me to step into 
-                        a software engineering role at your company and be a strong 
-                        contributor to your developer team.
-                    </p>
-                    <p>
-                        In my free time I enjoy golfing, fishing, and 
-                        spending time with family and friends.
-                    </p>
+                    <h3 id="about-me">About Me</h3>
                 </div>
                 <div class="AboutMe2">
-                    <img src="67898677_10105155148602849_2784139698396725248_o.jpg" alt="Bio-pic" style="width:300px;height:300px;border-radius:8px;">
+                    <div class="AboutMe3">
+                        <p>
+                            Hi I'm Jared Gray. I am a licensed Optometrist turned software 
+                            developer, and have been coding for 2 years now. I first 
+                            completed an online full-stack web development bootcamp, and 
+                            since have been working on a software startup of my own (EHR and 
+                            practice management software for eye doctors, an ongoing project).
+                        </p>
+                        <p>
+                            My technical expertise includes strong skills in cutting 
+                            edge web development technologies (HTML, CSS, JavaScript, 
+                            React, Redux, React Router, Material-UI, Node, Express, SQL, 
+                            MySQL, SQLite, MongoDB, Git, Bash and PowerShell, JSON, Mocha); 
+                            and advanced knowledge of developer applications, tools, 
+                            methodologies and best practices (including Visual Studio Code, 
+                            OOD, RESTful APIs, client/server architecture and self-test 
+                            automation). I have coded on both macOS and Windows, and am also 
+                            very willing and eager to learn any new technologies necessary 
+                            for projects assigned to me.
+                        </p>
+                        <p>
+                            My coding knowledge and skills combined with excellent work 
+                            ethic and passion for coding will enable me to step into 
+                            a software engineering role at your company and be a strong 
+                            contributor to your developer team.
+                        </p>
+                        <p>
+                            In my free time I enjoy golfing, fishing, and 
+                            spending time with family and friends.
+                        </p>
+                        <p>
+                            Fun fact! I've been programing for
+                            <span id="time-container">0</span> seconds!
+                        </p>
+                    </div>
+                    <div class="AboutMe4">
+                        <img src="67898677_10105155148602849_2784139698396725248_o.jpg" alt="Bio-pic" style="width:300px;height:300px;border-radius:8px;">
+                    </div>
                 </div>
             </div>
             <div class="Projects">
-                <h3>Projects</h3>
+                <h3 id="projects">Projects</h3>
                 <ul>
                     <li>
                         <a href="http://playlist-factory.surge.sh/">Jamming</a>
@@ -64,7 +78,7 @@
                 </ul>
             </div>
             <div class="Skills">
-                <h3>Skills</h3>
+                <h3 id="skills">Skills</h3>
                 <div class="Skills1">
                     <div class="Skills1a">
                         <img src="html.svg" alt="HTML" style="width:35px;height:35px;">
@@ -102,7 +116,7 @@
                 </div>
             </div>
             <div class="Contact">
-                <h3>Contact</h3>
+                <h3 id="contact">Contact</h3>
                 <div class="Contact1">
                     <p>
                         If you have any questions for me please feel free to reach 
@@ -120,6 +134,21 @@
             </div>
         </div>
     </body>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "03-01-2019";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+    
+        setInterval(() => {
+          const now = new Date();
+          const difference = Math.floor(
+            (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+          );
+    
+          timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+    </script>
 </html>
 
 
